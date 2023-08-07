@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 const { Schema } = mongoose;
 const rawuserpage = fs.readFileSync(path.join(__dirname,'public','user.html'),'utf-8');
-// console.log("this is template:",rawuserpage)
 let copyuserpage = rawuserpage;
 const port = process.env.PORT||8000;
 const app = express();
@@ -83,8 +82,6 @@ app.post('/login',async (req,res)=>{
     }else{
         console.log("valid user");
         isValidUser = true;
-        console.log(rawuserpage);
-        console.log(typeof(rawuserpage));
         copyuserpage = rawuserpage.replace(/\{userImage\}/g,data.image)
                                 .replace(/\{userMobile\}/g,data.mobile)
                                 .replace(/\{userName\}/g,data.name)
@@ -102,6 +99,7 @@ app.use('/user',(req,res,next)=>{
         res.sendStatus(404);
     }
 });
+
 app.get('/user',(req,res)=>{
     console.log("user loged in to its page");
     res.end(copyuserpage);
@@ -190,6 +188,38 @@ app.get('/notification.mp3',(req,res)=>{
     res.sendFile(path.join(__dirname,'public','notification.mp3'));
 })
 
+app.post('/clearMsg',async (req,res)=>{
+    console.log("request for clearing chat");
+    console.log(req.body);
+    let firstPersonMobile = req.body.firstPersonMobile;
+    let secondPersonMobile = req.body.secondPersonMobile;
+    console.log(firstPersonMobile , "  " , secondPersonMobile);
+    const firstPerson = await User.findOne({mobile : firstPersonMobile});
+
+    let newincoming = firstPerson['incoming'];
+    // console.log(newincoming);
+    if(newincoming != undefined){
+        let newincomingMsg = newincoming[secondPersonMobile];
+        console.log(newincomingMsg);
+        if(newincomingMsg != undefined){
+            newincoming[secondPersonMobile] = [];
+            console.log(newincoming);
+            await User.findOneAndUpdate({mobile : firstPersonMobile},{incoming : newincoming});
+        }
+    }
+
+    let newoutgoing = firstPerson['outgoing'];
+    // console.log(newincoming);
+    if(newoutgoing!= undefined){
+        let newoutgoingMsg = newoutgoing[secondPersonMobile];
+        console.log(newoutgoingMsg);
+        if(newoutgoingMsg != undefined){
+            newoutgoing[secondPersonMobile] = [];
+            console.log(newoutgoing);
+            await User.findOneAndUpdate({mobile : firstPersonMobile},{outgoing : newoutgoing});
+        }
+    }
+});
 app.get('/favicon.ico',(req,res)=>{
     res.send('https://cdn-icons-png.flaticon.com/128/1384/1384079.png');
 })

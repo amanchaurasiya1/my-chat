@@ -12,20 +12,22 @@
             padding: 0px;
             box-sizing: border-box;
         }
-        html{
-            scroll-behavior:smooth;
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             background-color: rgb(59, 58, 58);
         }
+
         nav {
             display: flex;
             align-items: center;
             justify-content: space-around;
             width: 100vw;
             height: 8vh;
-            background: linear-gradient(90deg, rgba(200,210,212,1) 0%, rgba(22,20,56,1) 100%);
+            background: linear-gradient(90deg, rgba(200, 210, 212, 1) 0%, rgba(22, 20, 56, 1) 100%);
         }
 
         nav ul {
@@ -35,19 +37,23 @@
             width: 80vw;
             height: 100%;
         }
+
         nav ul li {
             margin: 0px 20px;
             padding: 7px;
             list-style: none;
         }
+
         nav ul li a {
             text-decoration: none;
         }
-        #userOptions img{
+
+        #userOptions img {
             width: 30px;
             height: 30px;
             border-radius: 50%;
         }
+
         nav ul li img:hover {
             box-shadow: 2px 2px 5px black;
         }
@@ -58,57 +64,65 @@
             height: 40px;
             cursor: pointer;
         }
-        #userProfileOptions{
+
+        #userProfileOptions {
             display: none;
             flex-direction: column;
             position: absolute;
-            top:50px;
-            right:0px;
-            border:2px solid rgb(67, 63, 63);
+            top: 50px;
+            right: 0px;
+            border: 2px solid rgb(67, 63, 63);
             background-color: white;
-            color:black;
-            width:170px;
-            height:200px;
+            color: black;
+            width: 170px;
+            height: 200px;
         }
-        #userImgInfo{
+
+        #userImgInfo {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin:5px;
+            margin: 5px;
             background-color: lightcyan;
         }
-        #userImgOptions{
+
+        #userImgOptions {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        #userImgOptions button{
+
+        #userImgOptions button {
             text-align: center;
             margin: 10px 0px;
-            padding:5px;
+            padding: 5px;
             background-color: transparent;
             border: none;
             cursor: pointer;
             font-size: 15px;
             width: 100%;
             /* border:2px solid red; */
-            height:90%;
+            height: 90%;
         }
-        #userImgOptions button:hover{
-            color:red;
+
+        #userImgOptions button:hover {
+            color: red;
             font-weight: bold;
         }
-        #userImgOptions img{
-            width:25px;
-            height:13px;
+
+        #userImgOptions img {
+            width: 25px;
+            height: 13px;
             margin-right: 2px;
         }
-        .hr{
-            width:100%;
+
+        .hr {
+            width: 100%;
             border: 1px solid black;
-            height:2px;
+            height: 2px;
             border-style: dashed;
         }
+
         #fullBody {
             display: flex;
             flex-direction: row;
@@ -119,56 +133,64 @@
             flex-direction: column;
             width: 35vw;
             height: 85vh;
-            background: linear-gradient(180deg, rgba(238,255,254,0.7401085434173669) 0%, rgba(38,36,71,1) 100%);
+            background: linear-gradient(180deg, rgba(238, 255, 254, 0.7401085434173669) 0%, rgba(38, 36, 71, 1) 100%);
         }
-        #searchUser{
+
+        #searchUser {
             background-color: rgb(56, 56, 56);
-            width:100%;
-            height:10%;
+            width: 100%;
+            height: 10%;
         }
-        #searchUser input{
+
+        #searchUser input {
             border-radius: 5px;
-            padding:0px 5px;
-            width:80%;
-            height:100%;
+            padding: 0px 5px;
+            width: 80%;
+            height: 100%;
         }
-        #searchUser button{
+
+        #searchUser button {
             cursor: pointer;
-            padding:5px;
-            width:18%;
-            height:100%;
+            padding: 5px;
+            width: 18%;
+            height: 100%;
         }
-        #searchedUser{
+
+        #searchedUser {
             display: flex;
             flex-direction: column;
             margin-top: 7px;
-            width:100%;
-            height:88%;
+            width: 100%;
+            height: 88%;
             overflow-y: auto;
         }
-        .searchedUserList{
+
+        .searchedUserList {
             display: none;
             align-items: center;
-            margin:5px 0px;
-            border:2px solid  black;
-            background: linear-gradient(90deg, rgba(57,78,106,1) 1%, rgba(66,76,92,1) 60%, rgba(136,144,157,1) 97%);
-            color:white;
+            margin: 5px 0px;
+            border: 2px solid black;
+            background: linear-gradient(90deg, rgba(57, 78, 106, 1) 1%, rgba(66, 76, 92, 1) 60%, rgba(136, 144, 157, 1) 97%);
+            color: white;
             border-radius: 24px;
             cursor: pointer;
         }
-        #searchedUserImg img{
+
+        #searchedUserImg img {
             /* border:2px solid green; */
-            width:40px ;
+            width: 40px;
             height: 40px;
-            margin:0px 30px  0px 10px;
+            margin: 0px 30px 0px 10px;
         }
-        #searchedUserInfo{
+
+        #searchedUserInfo {
             display: flex;
-            margin:0px 5px;
+            margin: 0px 5px;
             flex-direction: column;
         }
-        #searchedUserInfo p{
-            margin-top:3px;
+
+        #searchedUserInfo p {
+            margin-top: 3px;
         }
 
         #bodyRight {
@@ -187,34 +209,39 @@
             height: 10%;
             background-color: rgba(199, 203, 206, 0.877);
         }
-        #secondPersonInfo{
+
+        #secondPersonInfo {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        #secondPersonImg img{
-           width:40px;
-           height:40px; 
-           cursor: pointer;
-        }
-        #chatOptions img{
-            width:30px;
-            height:30px;
+
+        #secondPersonImg img {
+            width: 40px;
+            height: 40px;
             cursor: pointer;
         }
-        #chatOptions img:hover{
+
+        #chatOptions img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #chatOptions img:hover {
             background-color: rgba(150, 191, 207, 0.584);
             border-radius: 23px;
         }
+
         #chattingBox {
             width: 100%;
             height: 90%;
             border: 2px solid black;
-            background: linear-gradient(90deg, rgba(94,81,102,1) 0%, rgba(40,88,71,1) 51%, rgba(4,27,68,1) 100%);
+            background: linear-gradient(90deg, rgba(94, 81, 102, 1) 0%, rgba(40, 88, 71, 1) 51%, rgba(4, 27, 68, 1) 100%);
             overflow-y: auto;
         }
-        
+
         #secondPerson {
             float: left;
             clear: both;
@@ -226,6 +253,7 @@
             background-color: rgb(61, 125, 189);
             color: white;
         }
+
         #firstPerson {
             float: right;
             clear: both;
@@ -237,12 +265,14 @@
             background-color: rgba(181, 76, 96, 0.984);
             color: white;
         }
-        .messageLeftBtn{
+
+        .messageLeftBtn {
             background-color: transparent;
             border: none;
         }
-        .messageLeftBtn img{
-            width:30px;
+
+        .messageLeftBtn img {
+            width: 30px;
             height: 30px;
         }
 
@@ -252,7 +282,7 @@
             align-items: center;
             width: 100%;
             height: 10%;
-            background: linear-gradient(90deg, rgba(211,202,217,1) 0%, rgba(182,194,152,1) 23%, rgba(97,122,166,1) 47%, rgba(159,145,145,1) 77%, rgba(117,148,173,1) 100%);
+            background: linear-gradient(90deg, rgba(211, 202, 217, 1) 0%, rgba(182, 194, 152, 1) 23%, rgba(97, 122, 166, 1) 47%, rgba(159, 145, 145, 1) 77%, rgba(117, 148, 173, 1) 100%);
         }
 
         #messageSenderBox form {
@@ -282,12 +312,15 @@
             background-color: green;
             color: white;
         }
-        .messageLeftBtn{
+
+        .messageLeftBtn {
             cursor: pointer;
         }
-        .messageLeftBtn img:hover{
+
+        .messageLeftBtn img:hover {
             transform: scale(1.15);
         }
+
         footer {
             display: flex;
             flex-direction: column;
@@ -297,156 +330,193 @@
             width: 100vw;
             height: 7vh;
             background-color: rgba(10, 24, 20, 0.5);
-            color:white;
+            color: white;
         }
-        #userChatOptions{
+
+        #userChatOptions {
             display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             position: absolute;
             background-color: whitesmoke;
-            top:16%;
-            right:14%;
-            width:12%;
-            border-radius:14px;
+            top: 16%;
+            right: 14%;
+            width: 12%;
+            border-radius: 14px;
         }
-        #clearChatConfirmation{
+
+        #clearChatConfirmation {
             position: absolute;
-            top:40%;
-            left:40%;
+            top: 40%;
+            left: 40%;
             display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: whitesmoke;
-            color:black;
-            width:30vw;
-            height:100px;
-            border:2px solid rgba(255,255,255,0.2);
+            color: black;
+            width: 30vw;
+            height: 100px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
             box-shadow: 1px 1px 7px black;
             border-radius: 14px;
-            z-index:2;
+            z-index: 2;
         }
-        #clearMsgBoxBtn{
+
+        #clearMsgBoxBtn {
             display: flex;
             justify-content: space-around;
-            margin:10px 3px;
+            margin: 10px 3px;
         }
-        #clearChatConfirmation strong{
+
+        #clearChatConfirmation strong {
             font-size: large;
-            padding:5px;
-            margin:5px 0px;
+            padding: 5px;
+            margin: 5px 0px;
         }
-        #clearMsgBoxBtn button{
-            margin:0px 50px;
-            padding:7px;
+
+        #clearMsgBoxBtn .clearMsgBtnDiv {
+            margin: 0px 50px;
+            padding: 7px;
         }
-        .cancelBtn{
+
+        .cancelBtn {
             background-color: red;
             color: white;
         }
-        .confirmBtn{
+
+        .confirmBtn {
             background-color: green;
             color: white;
         }
-        .cancelBtn:hover{
+
+        .cancelBtn:hover {
             background-color: rgba(255, 0, 0, 0.486);
             color: black;
             font-weight: bold;
         }
-        .confirmBtn:hover{
+
+        .confirmBtn:hover {
             background-color: rgba(0, 128, 0, 0.354);
             color: black;
             font-weight: bold;
         }
-        .chatOption{
+
+        .chatOption {
             display: flex;
             align-items: center;
-            width:100%;
-            padding:7px 10px;
-            margin:5px;
+            width: 100%;
+            padding: 7px 10px;
+            margin: 5px;
             cursor: pointer;
         }
-        .chatOption img{
-            width:20px;
-            height:20px;
+
+        .chatOption img {
+            width: 20px;
+            height: 20px;
         }
-        .chatOption:hover{
+
+        .chatOption:hover {
             background-color: #a1b1b17f;
         }
-        #userdata{
+
+        #userdata {
             display: none;
         }
-        .dummymsg{
+
+        .dummymsg {
             display: none;
         }
-        #backBtn{
+
+        #backBtn {
             display: none;
         }
-        #backBtn img{
-            width:30px;
-            height:30px;
+
+        #backBtn img {
+            width: 30px;
+            height: 30px;
         }
-        #backBtn img:hover{
+
+        #backBtn img:hover {
             background-color: rgba(186, 226, 235, 0.829);
         }
-        @media only screen and (max-width:900px){
-            footer{
+
+        @media only screen and (max-width:900px) {
+            footer {
                 font-size: small;
             }
-            #bodyLeft{
-                width:25vw;
+
+            #bodyLeft {
+                width: 25vw;
             }
-            #bodyRight{
-                width:75vw;
+
+            #bodyRight {
+                width: 75vw;
             }
         }
-        @media only screen and (max-width:800px){
-            #bodyRight{
+
+        @media only screen and (max-width:800px) {
+            #bodyRight {
                 display: none;
             }
-            #bodyLeft{
-                width:100%;
+
+            #bodyLeft {
+                width: 100%;
             }
-            #userChatOptions{
-                width:40%;
+
+            #userChatOptions {
+                width: 40%;
             }
-            #clearChatConfirmation{
-                left:16%;
-                height:110px;
+
+            #clearChatConfirmation {
+                left: 16%;
+                height: 110px;
+                width:60vw;
             }
-            #backBtn{
+            #clearChatConfirmation strong {
+                font-size: small;
+            }
+
+            #backBtn {
                 display: block;
             }
         }
-        @media only screen and (max-width:450px){
-            footer{
-                font-size:x-small;
+
+        @media only screen and (max-width:450px) {
+            footer {
+                font-size: x-small;
             }
-            #userImg img{
+
+            #userImg img {
                 width: 34px;
-                height:34px;
+                height: 34px;
             }
-            #userOptions img{
-                width:20px;
-                height:20px;
+
+            #userOptions img {
+                width: 20px;
+                height: 20px;
             }
-            .messageLeftBtn img{
-                width:20px;
-                height:20px;
+
+            .messageLeftBtn img {
+                width: 20px;
+                height: 20px;
             }
-            nav ul li{
-                margin:0px 11px;
+
+            nav ul li {
+                margin: 0px 11px;
             }
-            #fontSelector{
+
+            #fontSelector {
                 display: none;
             }
-            #sendMessage{
-                width:27%;
+
+            #sendMessage {
+                width: 27%;
             }
-            #messageInput{
-                width:70%;
+
+            #messageInput {
+                width: 70%;
             }
         }
     </style>
@@ -457,9 +527,12 @@
         <nav>
             <ul id="userOptions">
                 <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/724/724689.png" alt="chat"></a> </li>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4789/4789427.png" alt="status"></a> </li>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3059/3059561.png" alt="calls"></a> </li>
-                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099058.png" alt="settings"></a> </li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/4789/4789427.png" alt="status"></a>
+                </li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/3059/3059561.png" alt="calls"></a>
+                </li>
+                <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099058.png" alt="settings"></a>
+                </li>
             </ul>
             <div id="userProfile">
                 <div id="userImg" onclick="myProfile(event)">
@@ -473,12 +546,20 @@
         <section id="userdata">
             {userData}
         </section>
-        
+
         <section id="clearChatConfirmation">
             <strong>Do You Really Want To Clear This Chat ? </strong>
             <div id="clearMsgBoxBtn">
-                <button class="cancelBtn" onclick="removeConfirmationBox(event)">Cancel</button>
-                <button class="confirmBtn" onclick="clearMsg(event)">Confirm</button>
+                <div class="clearMsgBtnDiv">
+                    <button class="cancelBtn" onclick="removeConfirmationBox(event)">Cancel</button>
+                </div>
+                <div class="clearMsgBtnDiv">
+                    <form action="/clearMsg" method="post">
+                        <input type="tel" name="firstPersonMobile" style="display: none;" value="{userMobile}" id="firstPersonClearMsg">
+                        <input type="tel" name="secondPersonMobile" style="display: none;"  value="" id="secondPersonClearMsg">
+                        <button class="confirmBtn" type="submit" onclick="clearMsg(event)">Confirm</button>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -487,20 +568,22 @@
                 <h3>{userName}</h3>
                 <p>{userMobile}</p>
             </div>
-            <hr width="100%" 
-            size="5">
+            <hr width="100%" size="5">
             <div id="userImgOptions">
                 <button>Update</button>
                 <div class="hr"></div>
                 <button>Delete</button>
                 <div class="hr"></div>
-                <button onclick="logout(event)"><img src="https://cdn-icons-png.flaticon.com/128/4662/4662171.png" alt="img">LogOut</button>
+                <button onclick="logout(event)"><img src="https://cdn-icons-png.flaticon.com/128/4662/4662171.png"
+                        alt="img">LogOut</button>
             </div>
         </section>
 
         <section id="userChatOptions">
             <p class="chatOption" id="notification">
-                Notification : <img src="https://t4.ftcdn.net/jpg/01/11/83/19/240_F_111831968_vCgI1K6RSfB6x5EpKfRe6CweyY9JS7BD.jpg" alt="">
+                Notification : <img
+                    src="https://t4.ftcdn.net/jpg/01/11/83/19/240_F_111831968_vCgI1K6RSfB6x5EpKfRe6CweyY9JS7BD.jpg"
+                    alt="">
             </p>
             <p class="chatOption" id="clearMSg" onclick="showConfirmationBox(event)">
                 Clear Chat
@@ -511,13 +594,13 @@
             <div id="fullBody">
                 <div id="bodyLeft">
                     <div id="searchUser">
-                        <input type="number" placeholder="Enter the number of your known.." value="" maxlength="10" >
+                        <input type="number" placeholder="Enter the number of your known.." value="" maxlength="10">
                         <button type="button">Find</button>
                     </div>
                     <div id="searchedUser">
-                        <div class = "searchedUserList">
+                        <div class="searchedUserList">
                             <div id="searchedUserImg">
-                                <img src= "https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="img">
+                                <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="img">
                             </div>
                             <div id="userInfo">
                                 <h4>**{searchedUserName}**</h4>
@@ -528,8 +611,9 @@
                 </div>
                 <div id="bodyRight">
                     <div id="secondPersonProfile">
-                        <div id="backBtn" >
-                            <img src="https://cdn-icons-png.flaticon.com/128/5255/5255029.png" alt="backBtn" onclick="backToSearch(event)">
+                        <div id="backBtn">
+                            <img src="https://cdn-icons-png.flaticon.com/128/5255/5255029.png" alt="backBtn"
+                                onclick="backToSearch(event)">
                         </div>
                         <div id="secondPersonImg">
                             <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="img">
@@ -540,32 +624,36 @@
                         </div>
                         <div id="chatOptions">
                             <img src="https://cdn-icons-png.flaticon.com/128/2893/2893795.png" alt="options"
-                            onclick="showChatOptions(event)">
+                                onclick="showChatOptions(event)">
                         </div>
                     </div>
                     <div id="chattingBox">
                         <div id="secondPerson" class="dummymsg">
-                            Lorem ipsum dolor second 
+                            Lorem ipsum dolor second
                         </div>
-                        <div id = "firstPerson"  class="dummymsg">
+                        <div id="firstPerson" class="dummymsg">
                             Lorem ipsum dolor first
                         </div>
                     </div>
                     <div id="messageSenderBox">
                         <div id="emoji">
-                            <button class="messageLeftBtn"><img src="https://cdn-icons-png.flaticon.com/128/4160/4160724.png" alt="emoji"></button>
+                            <button class="messageLeftBtn"><img
+                                    src="https://cdn-icons-png.flaticon.com/128/4160/4160724.png" alt="emoji"></button>
                         </div>
                         <div id="media">
-                            <button class="messageLeftBtn"><img src="https://cdn-icons-png.flaticon.com/128/3767/3767084.png" alt="media"></button>
+                            <button class="messageLeftBtn"><img
+                                    src="https://cdn-icons-png.flaticon.com/128/3767/3767084.png" alt="media"></button>
                         </div>
                         <div id="fontSelector">
-                            <button class="messageLeftBtn"><img src="https://cdn-icons-png.flaticon.com/128/4662/4662541.png" alt="font"></button>
+                            <button class="messageLeftBtn"><img
+                                    src="https://cdn-icons-png.flaticon.com/128/4662/4662541.png" alt="font"></button>
                         </div>
                         <div id="voiceMessage">
-                            <button class="messageLeftBtn"><img src="https://cdn-icons-png.flaticon.com/128/3293/3293623.png" alt="voice"></button>
+                            <button class="messageLeftBtn"><img
+                                    src="https://cdn-icons-png.flaticon.com/128/3293/3293623.png" alt="voice"></button>
                         </div>
                         <form action="/user" method="post" id="messageContent">
-                            <input type="number" style="display: none;" name="sender" value="{userMobile}" >
+                            <input type="number" style="display: none;" name="sender" value="{userMobile}">
                             <input type="number" style="display: none;" name="receiver" value="" id="receiverMobile">
                             <input type="text" name="message" id="messageInput" value="" autocomplete="off">
                             <button class="btn" id="sendMessage" type="submit">Send</button>
@@ -573,29 +661,30 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
     </main>
     <footer>
         <h5>! DISCLAIMER !</h5>
-        <P>Keep our commonity feel safe and Don't use any abusive content on chat.For Security perpose your data can be used if you found illegal.</P>
+        <P>Keep our commonity feel safe and Don't use any abusive content on chat.For Security perpose your data can be
+            used if you found illegal.</P>
     </footer>
     <!-- <script src="index.js"></script> -->
     <script>
 
-        let a,b;
+        let a, b;
         // function myPlay(){
         //     var audio = new Audio("sendNotification.mp3");
         //     audio.play();
         // }
 
 
-        function myProfile(event){
+        function myProfile(event) {
             console.log("hello");
             const element = document.getElementById('userProfileOptions');
-            if(element.style.display == 'none'){
+            if (element.style.display == 'none') {
                 element.style.display = 'flex';
-            }else{
+            } else {
                 element.style.display = 'none';
             }
         }
@@ -608,20 +697,20 @@
         //     }
         // });
 
-        
+
         // to clear message box after sending
         const senderButton = document.getElementById('sendMessage');
         const messageBox = document.getElementById('messageInput');
-        senderButton.addEventListener('click',(event)=>{
+        senderButton.addEventListener('click', (event) => {
             // myPlay();
-            setTimeout(()=>{
+            setTimeout(() => {
                 messageBox.value = "";
-            },100);
+            }, 100);
         })
 
 
-        function logout(event){
-            window.location.assign('http://'+ window.location.host + '/');
+        function logout(event) {
+            window.location.assign('http://' + window.location.host + '/');
         }
 
 
@@ -630,20 +719,20 @@
         let searchUserElement = document.querySelector("#searchUser input");
         let searchUserButton = document.querySelector("#searchUser button");
         const baseUrl = window.location.href + '/wurhwori32094jnfwmnr2u923vnf4i';
-        searchUserButton.addEventListener('click',getData);
-        async function getData(event){
+        searchUserButton.addEventListener('click', getData);
+        async function getData(event) {
             const value = searchUserElement.value;
-            const res = await fetch(baseUrl,{
-                method : 'GET'
+            const res = await fetch(baseUrl, {
+                method: 'GET'
             })
             // console.log(res);
             const data = await res.json();
             // console.log(data);
 
             let searchedObj;
-            for(let elem of data){
-                for(let key in elem){
-                    if(key == 'mobile' && elem[key] == value){
+            for (let elem of data) {
+                for (let key in elem) {
+                    if (key == 'mobile' && elem[key] == value) {
                         searchedObj = elem;
                         break;
                     }
@@ -658,19 +747,19 @@
             const searchedUser = document.getElementById('searchedUser');
             searchedUser.appendChild(clone);
 
-            if(searchedObj == null){
+            if (searchedObj == null) {
                 cloneName.innerText = "Not Registered";
                 cloneMobile.innerText = value;
-                clone.style.display = 'flex'; 
-            }else{
+                clone.style.display = 'flex';
+            } else {
                 cloneName.innerText = searchedObj['name'];
                 cloneMobile.innerText = searchedObj['mobile'];
                 clone.style.display = 'flex';
-                cloneImg.setAttribute("src",searchedObj['image']);
+                cloneImg.setAttribute("src", searchedObj['image']);
             }
             let secondPersons = Array.from(document.getElementsByClassName('searchedUserList'));
-            for(let ele of secondPersons){
-                ele.addEventListener('click',displaySecondPersonChatbox);
+            for (let ele of secondPersons) {
+                ele.addEventListener('click', displaySecondPersonChatbox);
             }
         }
 
@@ -678,53 +767,53 @@
 
         // on clicking second person on leftbody  show the info on right body top and also clear the divs.
 
-        function displaySecondPersonChatbox(event){
+        function displaySecondPersonChatbox(event) {
             // console.log("a : " , a ,"b : " , b);
-            if(a != undefined && b != undefined){
+            if (a != undefined && b != undefined) {
                 clearInterval(a);
                 clearInterval(b);
             }
             const firstDivsTodelete = Array.from(document.querySelectorAll('#firstPerson'));
             const secondDivsTodelete = Array.from(document.querySelectorAll('#secondPerson'));
-            for(let i = 1; i < firstDivsTodelete.length ; i++){
+            for (let i = 1; i < firstDivsTodelete.length; i++) {
                 firstDivsTodelete[i].remove();
             }
-            for(let i = 1; i < secondDivsTodelete.length ; i++){
+            for (let i = 1; i < secondDivsTodelete.length; i++) {
                 secondDivsTodelete[i].remove();
             }
             // console.log(this);
             const secondPersonName = this.querySelector('h4').innerText;
             const secondPersonMobile = this.querySelector('p').innerText;
             const secondPersonImg = this.querySelector('img').getAttribute('src');
-            document.getElementById("secondPersonImg").querySelector('img').setAttribute('src',secondPersonImg);
+            document.getElementById("secondPersonImg").querySelector('img').setAttribute('src', secondPersonImg);
             document.getElementById('secondPersonInfo').querySelector('h3').innerText = secondPersonName;
             document.getElementById('secondPersonInfo').querySelector('p').innerText = secondPersonMobile;
             document.getElementById('receiverMobile').value = secondPersonMobile;
 
             // load the previous messages
             const firstPersonMobile = document.querySelector('#userImgInfo p').innerText;
-            const prom = loadPreviousMessages(firstPersonMobile,secondPersonMobile);
+            const prom = loadPreviousMessages(firstPersonMobile, secondPersonMobile);
 
             // calling incoming outgoing msg to run;
-            prom.then(()=>{
+            prom.then(() => {
                 displayFirstPersonMsg();
                 displaySecondPersonMsg();
             })
         }
 
         // function to load the previous messagees
-        const loadPreviousMessages = async(firstPersonMobile,secondPersonMobile)=>{
-            const res = await fetch(baseUrl,{
-                method : 'GET'
+        const loadPreviousMessages = async (firstPersonMobile, secondPersonMobile) => {
+            const res = await fetch(baseUrl, {
+                method: 'GET'
             })
             // console.log(res);
             const data = await res.json();
             // console.log(data);
 
             let firstPersonObj = null;
-            for(let obj of data){
-                for(let key in obj){
-                    if(key == 'mobile' && obj[key] == firstPersonMobile){
+            for (let obj of data) {
+                for (let key in obj) {
+                    if (key == 'mobile' && obj[key] == firstPersonMobile) {
                         firstPersonObj = obj;
                         break;
                     }
@@ -735,40 +824,40 @@
             let incomingMsgArr = [];
             let outgoingMsgArr = [];
 
-            if(firstPersonObj['outgoing'] == undefined && firstPersonObj['incoming'] != undefined){
-                if(firstPersonObj['incoming'][secondPersonMobile] != undefined){
+            if (firstPersonObj['outgoing'] == undefined && firstPersonObj['incoming'] != undefined) {
+                if (firstPersonObj['incoming'][secondPersonMobile] != undefined) {
                     incomingMsgArr = firstPersonObj['incoming'][secondPersonMobile];
                     incomingMsgLength = incomingMsgArr.length;
                 }
             }
-            else if(firstPersonObj['outgoing'] != undefined && firstPersonObj['incoming'] == undefined){
-                if(firstPersonObj['outgoing'][secondPersonMobile] != undefined){
+            else if (firstPersonObj['outgoing'] != undefined && firstPersonObj['incoming'] == undefined) {
+                if (firstPersonObj['outgoing'][secondPersonMobile] != undefined) {
                     outgoingMsgArr = firstPersonObj['outgoing'][secondPersonMobile];
-                    outgoingMsgLength = outgoingMsgArr.length; 
+                    outgoingMsgLength = outgoingMsgArr.length;
                 }
             }
-            else if(firstPersonObj['outgoing'] != undefined && firstPersonObj['incoming'] != undefined){
-                if(firstPersonObj['outgoing'][secondPersonMobile] != undefined && firstPersonObj['incoming'][secondPersonMobile] == undefined){
+            else if (firstPersonObj['outgoing'] != undefined && firstPersonObj['incoming'] != undefined) {
+                if (firstPersonObj['outgoing'][secondPersonMobile] != undefined && firstPersonObj['incoming'][secondPersonMobile] == undefined) {
                     outgoingMsgArr = firstPersonObj['outgoing'][secondPersonMobile];
                     outgoingMsgLength = outgoingMsgArr.length;
                 }
-                else if(firstPersonObj['outgoing'][secondPersonMobile] == undefined && firstPersonObj['incoming'][secondPersonMobile] != undefined){
+                else if (firstPersonObj['outgoing'][secondPersonMobile] == undefined && firstPersonObj['incoming'][secondPersonMobile] != undefined) {
                     incomingMsgArr = firstPersonObj['incoming'][secondPersonMobile];
                     incomingMsgLength = incomingMsgArr.length;
                 }
-                else if(firstPersonObj['outgoing'][secondPersonMobile] != undefined && firstPersonObj['incoming'][secondPersonMobile] != undefined){
+                else if (firstPersonObj['outgoing'][secondPersonMobile] != undefined && firstPersonObj['incoming'][secondPersonMobile] != undefined) {
                     incomingMsgArr = firstPersonObj['incoming'][secondPersonMobile];
                     incomingMsgLength = incomingMsgArr.length;
                     outgoingMsgArr = firstPersonObj['outgoing'][secondPersonMobile];
                     outgoingMsgLength = outgoingMsgArr.length;
-                    console.log(incomingMsgLength,"  ",outgoingMsgLength);
+                    console.log(incomingMsgLength, "  ", outgoingMsgLength);
                 }
             }
 
             let i = 0;
             let j = 0;
-            while(i < outgoingMsgLength && j < incomingMsgLength){
-                if(outgoingMsgArr[i].time < incomingMsgArr[j].time){
+            while (i < outgoingMsgLength && j < incomingMsgLength) {
+                if (outgoingMsgArr[i].time < incomingMsgArr[j].time) {
                     const node = document.getElementById("firstPerson");
                     let clone = node.cloneNode(true);
                     clone.innerText = outgoingMsgArr[i].message;
@@ -776,7 +865,7 @@
                     document.getElementById("chattingBox").appendChild(clone);
                     clone.scrollIntoView();
                     i++;
-                }else{
+                } else {
                     const node = document.getElementById("secondPerson");
                     let clone = node.cloneNode(true);
                     clone.innerText = incomingMsgArr[j].message;
@@ -786,7 +875,7 @@
                     j++;
                 }
             }
-            while(i < outgoingMsgLength){
+            while (i < outgoingMsgLength) {
                 const node = document.getElementById("firstPerson");
                 let clone = node.cloneNode(true);
                 clone.innerText = outgoingMsgArr[i].message;
@@ -795,27 +884,27 @@
                 clone.scrollIntoView();
                 i++;
             }
-            while(j < incomingMsgLength){
+            while (j < incomingMsgLength) {
                 const node = document.getElementById("secondPerson");
-                    let clone = node.cloneNode(true);
-                    clone.innerText = incomingMsgArr[j].message;
-                    clone.style.display = 'block';
-                    document.getElementById("chattingBox").appendChild(clone);
-                    clone.scrollIntoView();
+                let clone = node.cloneNode(true);
+                clone.innerText = incomingMsgArr[j].message;
+                clone.style.display = 'block';
+                document.getElementById("chattingBox").appendChild(clone);
+                clone.scrollIntoView();
                 j++;
             }
         }
 
 
         // on clicking the secondPerson on left side data for incoming and outgoing will be fetch
-        const displayFirstPersonMsg = async()=>{
+        const displayFirstPersonMsg = async () => {
 
-            a = setInterval(async ()=>{
+            a = setInterval(async () => {
                 const firstPersonMobile = document.querySelector('#userImgInfo p').innerText;
                 const secondPersonMobile = document.querySelector('#secondPersonInfo p').innerText;
 
-                const res = await fetch(baseUrl,{
-                    method : 'GET'
+                const res = await fetch(baseUrl, {
+                    method: 'GET'
                 })
                 // console.log(res);
                 const data = await res.json();
@@ -823,22 +912,22 @@
 
                 let searchedObj;
                 console.log(searchedObj);
-                for(let obj of data){
-                    for(let key in obj){
-                        if(key == 'mobile' && obj[key] == firstPersonMobile){
+                for (let obj of data) {
+                    for (let key in obj) {
+                        if (key == 'mobile' && obj[key] == firstPersonMobile) {
                             searchedObj = obj;
                             break;
                         }
                     }
                 }
                 console.log(searchedObj);
-                if(searchedObj['outgoing'] != undefined){
+                if (searchedObj['outgoing'] != undefined) {
                     const outgoingMsgArr = searchedObj['outgoing'][secondPersonMobile];
                     const firstPersonDiv = Array.from(document.querySelectorAll('#firstPerson'));
-                    const divLength = firstPersonDiv.length - 1; 
+                    const divLength = firstPersonDiv.length - 1;
                     const outgoingLength = outgoingMsgArr.length;
-                    if(outgoingLength > divLength){
-                        for(let i = divLength ; i < outgoingLength ; i++){
+                    if (outgoingLength > divLength) {
+                        for (let i = divLength; i < outgoingLength; i++) {
                             const node = document.getElementById("firstPerson");
                             let clone = node.cloneNode(true);
                             clone.innerText = outgoingMsgArr[i].message;
@@ -850,43 +939,43 @@
                         }
                     }
                 }
-            },1000);
+            }, 1000);
         };
 
-        const displaySecondPersonMsg = async()=>{
-            b = setInterval(async ()=>{
+        const displaySecondPersonMsg = async () => {
+            b = setInterval(async () => {
                 const firstPersonMobile = document.querySelector('#userImgInfo p').innerText;
                 const secondPersonMobile = document.querySelector('#secondPersonInfo p').innerText;
 
-                const res = await fetch(baseUrl,{
-                    method : 'GET'
+                const res = await fetch(baseUrl, {
+                    method: 'GET'
                 })
                 // console.log(res);
                 const data = await res.json();
                 // console.log(data);
 
                 let searchedObj;
-                for(let obj of data){
-                    for(let key in obj){
-                        if(key == 'mobile' && obj[key] == firstPersonMobile){
+                for (let obj of data) {
+                    for (let key in obj) {
+                        if (key == 'mobile' && obj[key] == firstPersonMobile) {
                             searchedObj = obj;
                             break;
                         }
                     }
                 }
-                if(searchedObj['incoming'] != undefined){
+                if (searchedObj['incoming'] != undefined) {
                     const incomingMsgArr = searchedObj['incoming'][secondPersonMobile];
                     const secondPersonDiv = Array.from(document.querySelectorAll('#secondPerson'));
-                    const divLength = secondPersonDiv.length - 1; 
+                    const divLength = secondPersonDiv.length - 1;
                     const incomingLength = incomingMsgArr.length;
-                    if(incomingLength > divLength){
-                        for(let i = divLength ; i < incomingLength ; i++){
+                    if (incomingLength > divLength) {
+                        for (let i = divLength; i < incomingLength; i++) {
                             const node = document.getElementById("secondPerson");
                             let clone = node.cloneNode(true);
                             clone.innerText = incomingMsgArr[i].message;
                             clone.style.display = 'block';
                             document.getElementById("chattingBox").appendChild(clone);
-                            if(isNotification){
+                            if (isNotification) {
                                 var audio = await new Audio("notification.mp3");
                                 audio.play();
                             }
@@ -894,12 +983,12 @@
                         }
                     }
                 }
-            },1000);
+            }, 1000);
         };
 
-        function showChatOptions(event){
+        function showChatOptions(event) {
             let section = document.getElementById('userChatOptions');
-            if(section.style.display == 'none')
+            if (section.style.display == 'none')
                 section.style.display = 'flex';
             else
                 section.style.display = 'none';
@@ -908,25 +997,28 @@
 
         const notification = document.getElementById('notification');
         let isNotification = true;
-        notification.addEventListener('click',()=>{
+        notification.addEventListener('click', () => {
             isNotification = !isNotification;
-            if(isNotification)
-                notification.querySelector('img').setAttribute('src','https://t4.ftcdn.net/jpg/01/11/83/19/240_F_111831968_vCgI1K6RSfB6x5EpKfRe6CweyY9JS7BD.jpg');
+            if (isNotification)
+                notification.querySelector('img').setAttribute('src', 'https://t4.ftcdn.net/jpg/01/11/83/19/240_F_111831968_vCgI1K6RSfB6x5EpKfRe6CweyY9JS7BD.jpg');
             else
-                notification.querySelector('img').setAttribute('src','https://cdn-icons-png.flaticon.com/128/727/727240.png');
+                notification.querySelector('img').setAttribute('src', 'https://cdn-icons-png.flaticon.com/128/727/727240.png');
             console.log(isNotification);
         })
 
-        function showConfirmationBox(event){
+        function showConfirmationBox(event) {
+            // load fisrst person mobile and second person mobile to form 
+            const secondPersonClearMsg = document.getElementById('secondPersonClearMsg');
+            secondPersonClearMsg.value = document.querySelector('#secondPersonInfo p').innerText;
             let section = document.getElementById('clearChatConfirmation');
             console.log(section);
             console.log(section.style.display);
-            if(section.style.display == 'none')
+            if (section.style.display == 'none')
                 section.style.display = 'flex';
             else
                 section.style.display = 'none';
         }
-        function removeConfirmationBox(event){
+        function removeConfirmationBox(event) {
             let element = document.getElementById('clearChatConfirmation');
             element.style.display = 'none';
         }
@@ -934,15 +1026,15 @@
 
 
         function myFunction(x) {
-            setInterval(()=>{
+            setInterval(() => {
                 if (x.matches) { // If media query matches
                     // console.log("hello");
                     let secondPersons = Array.from(document.getElementsByClassName('searchedUserList'));
                     console.log()
-                    for(let ele of secondPersons){
-                        ele.addEventListener('click',showRightBody);
+                    for (let ele of secondPersons) {
+                        ele.addEventListener('click', showRightBody);
                     }
-                    function showRightBody(){
+                    function showRightBody() {
                         console.log(this);
                         const bodyRight = document.getElementById('bodyRight');
                         const bodyLeft = document.getElementById('bodyLeft');
@@ -951,14 +1043,14 @@
                         bodyRight.style.display = 'flex';
                     }
                 }
-            },1000);
+            }, 1000);
         }
 
         var x = window.matchMedia("(max-width: 800px)")
         myFunction(x) // Call listener function at run time
-        x.addListener(myFunction) 
+        x.addListener(myFunction)
 
-        function backToSearch(event){
+        function backToSearch(event) {
             clearInterval(a);
             clearInterval(b);
             const bodyRight = document.getElementById('bodyRight');
@@ -967,6 +1059,27 @@
             bodyRight.style.display = 'none';
             bodyLeft.style.display = 'flex';
         }
+
+
+        function clearMsg(event){
+            // const firstPersonMobile = document.querySelector('#userImgInfo p').innerText;
+            // const secondPersonMobile = document.querySelector('#secondPersonInfo p').innerText;
+            const firstDivsTodelete = Array.from(document.querySelectorAll('#firstPerson'));
+            const secondDivsTodelete = Array.from(document.querySelectorAll('#secondPerson'));
+        //     if (a != undefined && b != undefined) {
+        //         clearInterval(a);
+        //         clearInterval(b);
+        //     }
+        //     for (let i = 1; i < firstDivsTodelete.length; i++) {
+        //         firstDivsTodelete[i].remove();
+        //     }
+        //     for (let i = 1; i < secondDivsTodelete.length; i++) {
+        //         secondDivsTodelete[i].remove();
+        //     }
+        //     setInterval(a);
+        //     setInterval(b);
+        displaySecondPersonChatbox(event);
+    }
     </script>
 </body>
 
