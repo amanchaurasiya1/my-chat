@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(59, 58, 58);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(166, 215, 213);
+}
+nav ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+nav ul li{
+    margin:0px 20px;
+    padding: 7px;
+    list-style: none;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;            
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+nav ul li a:hover{
+    color:red;
+}
+#userImg img{
+    display: none;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+#loginsignup{
+    /* display: none; */
+    border:1px solid blue;
+    height:30px;
+    width:120px;
+    background-color: black;
+}
+#loginsignup:hover{
+    box-shadow: 2px 2px 5px black;
+}
+#signUpBtn{
+    height:100%;
+    margin:0px;
+    width:48%;
+    border:1px solid green;
+    cursor: pointer;
+}
+#loginBtn{
+    height:100%;
+    margin:0px;
+    width:48%;
+    border:1px solid green;
+    cursor: pointer;
+}
+#signUpBtn:hover{
+    background-color: red;
+    color: aliceblue;
+}
+#loginBtn:hover{
+    background-color: red;
+    color: aliceblue;
+}
+#fullBody {
+    display: flex;
+    flex-direction: row;
+}
+
+#bodyLeft {
+    width: 35vw;
+    height: 85vh;
+    background-color: lightgoldenrodyellow;
+}
+
+#bodyRight {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 85vh;
+    background-color: lightskyblue;
+}
+
+#secondPersonProfile {
+    width: 100%;
+    height: 10%;
+    background-color: lightslategray;
+}
+
+#chattingBox {
+    width: 100%;
+    height: 90%;
+    border: 2px solid black;
+    background-color: rgb(86, 105, 105);
+    overflow-y: auto;
+}
+
+#secondPerson {
+    float: left;
+    clear: both;
+    width: 40%;
+    padding: 10px;
+    margin: 15px 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(35, 130, 225);
+}
+
+#firstPerson {
+    float: right;
+    clear: both;
+    width: 40%;
+    padding: 10px;
+    margin: 15px 15px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(30, 220, 30);
+}
+
+#messageSenderBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    border: 2px solid moccasin;
+    background-color: burlywood;
+}
+
+#messageSenderBox form {
+    width: 50%;
+    height: 100%;
+}
+
+#messageInput {
+    height: 100%;
+    width: 80%;
+    padding: 0px 10px;
+    font-size: medium;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+#sendMessage {
+    height: 100%;
+    width: 18%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px black;
+}
+
+#sendMessage:hover {
+    background-color: green;
+    color: white;
+}
+
+footer {
+    width: 100vw;
+    height: 7vh;
+    background-color: aquamarine;
+}
+
+
+/* sign up box */
+#sectionLogin{
+    display: none;
+    background-color: black;
+    height:85vh;
+}
+#sectionSignUp{
+    display: none;
+    background-color: black;
+    height:85vh;
+}
+#signUpBox{  
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:20%;
+    left:40%;
+    box-shadow: 2px 1px 7px blue;
+    /* border:2px solid red; */
+    background-color:rgb(63, 62, 62);
+    width:25vw;
+    height:52vh;
+}
+.headingSignUp{
+    margin:15px;
+    color: red;
+    text-shadow: 1px 1px 5px red;
+}
+#signUpForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:2px solid red; */
+    width:100%;
+}
+#signUpForm div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    /* border:2px solid green; */
+    width:80%;
+}
+#signUpForm div input{
+    width:100%;
+    height:25px;
+    padding:7px;
+    border:none;
+    box-shadow: 2px 2px 5px white;
+    border-bottom: 1px solid red;
+}
+#signUpForm span{
+    margin:10px 0px;
+}
+#submitSignUp{
+    width:60px ;
+    height: 30px;
+    margin-top:10px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+}
+
+/* login box */
+
+#loginBox{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:20%;
+    left:40%;
+    box-shadow: 2px 1px 7px blue;
+    background-color:rgb(63, 62, 62);
+    width:25vw;
+    height:52vh;
+}
+.headingLogin{
+    margin:15px;
+    color: red;
+    text-shadow: 1px 1px 5px red;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:2px solid red; */
+    width:100%;
+}
+#loginForm div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+    /* border:2px solid green; */
+    width:80%;
+}
+#loginForm div input{
+    width:100%;
+    height:25px;
+    padding:7px;
+    border:none;
+    box-shadow: 2px 2px 5px white;
+    border-bottom: 1px solid red;
+}
+#submitLogin{
+    width:60px ;
+    height: 30px;
+    margin-top:10px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+}
