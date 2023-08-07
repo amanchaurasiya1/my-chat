@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 const { Schema } = mongoose;
 const rawuserpage = fs.readFileSync(path.join(__dirname,'public','user.html'),'utf-8');
-console.log("this is template:",rawuserpage)
+// console.log("this is template:",rawuserpage)
 let copyuserpage = rawuserpage;
 const port = process.env.PORT||8000;
 const app = express();
@@ -83,6 +83,8 @@ app.post('/login',async (req,res)=>{
     }else{
         console.log("valid user");
         isValidUser = true;
+        console.log(rawuserpage);
+        console.log(typeof(rawuserpage));
         copyuserpage = rawuserpage.replaceAll('{userImage}',data.image)
                                 .replaceAll('{userMobile}',data.mobile)
                                 .replaceAll('{userName}',data.name)
