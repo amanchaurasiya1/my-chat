@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 const { Schema } = mongoose;
 const rawuserpage = fs.readFileSync(path.join(__dirname,'public','user.html'),'utf-8');
+console.log("this is template:",rawuserpage)
 let copyuserpage = rawuserpage;
 const port = process.env.PORT||8000;
 const app = express();
