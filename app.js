@@ -69,6 +69,9 @@ app.post('/login',async (req,res)=>{
     const umobile = req.body.mobile;
     const upassword = req.body.password;
     // console.log(umobile,upassword);
+    try{
+
+    
     let data = await User.findOne({ 
         $and : [{mobile : umobile} , { password : upassword}] 
         });
@@ -85,6 +88,9 @@ app.post('/login',async (req,res)=>{
                                 .replaceAll('{userData}',data)
         res.redirect(`/user`);
     }
+}catch(e){
+    console.log("error:",e)
+}
 });
 app.use('/user',(req,res,next)=>{
     if(isValidUser){
