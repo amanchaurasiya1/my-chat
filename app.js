@@ -85,10 +85,10 @@ app.post('/login',async (req,res)=>{
         isValidUser = true;
         console.log(rawuserpage);
         console.log(typeof(rawuserpage));
-        copyuserpage = rawuserpage.replaceAll('{userImage}',data.image)
-                                .replaceAll('{userMobile}',data.mobile)
-                                .replaceAll('{userName}',data.name)
-                                .replaceAll('{userData}',data)
+        copyuserpage = rawuserpage.replace(/\{userImage\}/g,data.image)
+                                .replace(/\{userMobile\}/g,data.mobile)
+                                .replace(/\{userName\}/g,data.name)
+                                .replace(/\{userData\}/g,data)
         res.redirect(`/user`);
     }
 }catch(e){
