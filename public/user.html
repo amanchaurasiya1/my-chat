@@ -383,12 +383,20 @@
 
         .cancelBtn {
             background-color: red;
+            border-radius: 10px;
+            padding:5px 10px;
             color: white;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .confirmBtn {
             background-color: green;
             color: white;
+            border-radius: 10px;
+            padding:5px 10px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .cancelBtn:hover {
@@ -655,7 +663,7 @@
                         <form action="/user" method="post" id="messageContent">
                             <input type="number" style="display: none;" name="sender" value="{userMobile}">
                             <input type="number" style="display: none;" name="receiver" value="" id="receiverMobile">
-                            <input type="text" name="message" id="messageInput" value="" autocomplete="off">
+                            <input type="text" name="message" id="messageInput" value="" autocomplete="off" placeholder="message">
                             <button class="btn" id="sendMessage" type="submit">Send</button>
                         </form>
                     </div>

@@ -181,6 +181,7 @@ app.post('/user',async (req,res)=>{
 app.get('/user/wurhwori32094jnfwmnr2u923vnf4i',async (req,res)=>{
     res.json(await User.find());
 })
+
 app.get('/sendNotification.mp3',(req,res)=>{
     res.sendFile(path.join(__dirname,'public','sendNotification.mp3'));
 })
@@ -226,4 +227,4 @@ app.get('/favicon.ico',(req,res)=>{
 
 app.listen(port,()=>{
     console.log(`server is running on port http://localhost:${port}`);
-})
+});
